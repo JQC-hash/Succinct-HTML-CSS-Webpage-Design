@@ -1,0 +1,314 @@
+/*CSS of Food@Taiwan webpage including 
+index.html, 
+History.html,
+Taipei.html,
+Taichung.html,
+Kaohsiung.html, and 
+References.html 
+Creator: Jia-Qi CHEN u3181913
+Date: 2017-09-08*/
+
+
+body {
+	font-family: monospace;
+}
+
+.bg-container::after{
+	content: "";
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/googlemap_taipei.jpg");
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-position: bottom;
+	opacity: 0.45;
+	z-index: -1;
+}
+
+.core{
+	width: 1190px;
+	height: 100%;
+	margin:auto;
+}
+
+.center{
+	text-align:center;
+}
+
+.caption{
+	font-size:18px;
+}
+
+
+/*Styling of the navigation bar and dropdown menu.
+Design of dropdown menu leaned from W3School*/
+nav{
+	width:100%;
+	height:46px;
+	margin:auto;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+
+.horizTab{
+	color: #ffffff;
+	background-color: rgba(110,110,110,0.75);
+	width: 278px;
+	height: 40px;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 40px;
+	border: solid;
+	border-width: 3px;
+	border-color: rgba(255,255,255,0.75);
+	border-radius: 10px;
+	margin-left: 6px;
+	margin-right: 6px;
+	float: left;
+	cursor:pointer;
+}
+
+.horizTab:hover{
+	background-color: rgba(10,10,10,0.6);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(249,249,249);
+    min-width: 155px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+	text-align : left;
+    display: block;
+}
+
+.horizTab:hover .dropdown-content{
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(209,209,209, 0.8);
+	color: rgb(255,255,255);
+}
+
+
+
+/*Styling of index.html*/
+#banner{
+	margin: auto;
+	width: 100%;
+}
+div.white-box{
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	color: rgba(0,0,0,0.6);
+	background-color: rgba(255,255,255,0.7);
+	width: 1190px;
+	height: 60px;
+	font-weight: bold;
+	line-height: 30px;
+	border-radius:20px;
+}
+
+div.gray-box{
+	margin-left: auto;
+    margin-right: auto;
+	color: #ffffff;
+	background-color: rgba(110,110,110,0.7);
+	padding-top: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 5px;
+	width: 700px;
+	font-size: 18px;
+	text-align: justify;
+	text-justify:inter-ideograph;
+	line-height: 30px;
+	border-radius:20px;
+}
+
+.quote{
+	font-size:20px;
+}
+
+
+/*Styling of Taipei.html*/
+#topic{
+	text-align: center;
+	padding-top: 10px;
+	color: rgba(0,0,0,0.6);
+	background-color: rgba(255,255,255,0.7);
+	width: 600px;
+	height: 40px;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 30px;
+	border-radius:20px;	
+}
+
+.left-container{
+	width: 50%;
+	height: 100%;
+	margin: auto;
+	float: left;
+}
+.right-container{
+	margin: auto;
+	color: rgba(70,70,70,0.7);
+	background-color: rgba(255,207,173,0.8);
+	width:50%;
+	height: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 37px;
+	border-radius:20px;
+	float: left;
+}
+
+section{
+	padding-left:20px;
+}
+
+
+/*Styling of history.html*/
+div#historyWording{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 20px;
+	line-height: 40px;
+	height: 100%;
+	width: 390px;
+	border: dotted;
+	border-width: 3px;
+	border-color: rgba(0,0,0,0.7);
+	float: left;
+}
+
+Table#history{
+	width: 60%;
+	float:right;
+}
+
+Table#history td{
+	height:68px;
+}
+
+
+/*Styling of Taichung.html*/
+.half-container{
+	margin-left: auto;
+    margin-right: auto;
+	color: rgba(70,70,70,0.7);
+	background-color: rgba(255,207,173,0.8);
+	width:1000px;
+	height: 230px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+	border-radius:20px;		
+}
+
+div.pictures{
+	width:300px;
+	height:210px;
+	padding-left:10px;
+	padding-top:15px;
+	position: relative;
+	float:left;
+}
+
+img.small-pictures{
+	border-radius:20px;
+}
+
+div.intro{
+	width:660px;
+	height:200px;
+	padding-left:10px;
+	padding-right:20px;
+	line-height:25px;
+	color: rgba(50,50,50,0.7);
+	text-align: justify;
+	text-justify:inter-ideograph;
+	float:left;
+}
+
+
+/*Styling of Kaohsiung.html*/
+.large-container{
+	margin-left: auto;
+    margin-right: auto;
+	color: rgba(70,70,70,0.7);
+	background-color: rgba(255,207,173,0.8);
+	width:1000px;
+	height: 500px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+	border-radius:20px;
+	position:relative;
+}
+
+.map{
+	position:absolute;
+	bottom: 20px;
+	left: 10px;
+	width: 300px;
+	height: 250px;
+	float:left;
+	border:dotted;
+	border-radius:20px;
+	background-image:url("<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.323713893156!2d120.28606421423092!3d22.790465985071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0c2829ce72ad%3A0x98a6e8e5df7bd08b!2zODIw5Y-w54Gj6auY6ZuE5biC5bKh5bGx5Y2A5LuB5aO96LevMTI06Jmf!5e0!3m2!1szh-TW!2sau!4v1504010888694" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>")
+	
+}
+
+/*Styling of References.html*/
+table {
+    border-collapse: collapse;
+    width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:monospace;
+	font-size:18px;
+	border-spacing: 3px;
+    border-collapse: separate;
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	padding-left:25px;
+}
+
+tr:nth-child(even){
+	background-color: rgba(200,200,200,0.85);
+}
+
+tr:nth-child(odd){
+	background-color: rgba(230,230,230,0.85);
+}
+	
+th{
+	background-color:rgba(110,110,110,0.85);
+    color: white;
+}	
+
+
+
+
+
